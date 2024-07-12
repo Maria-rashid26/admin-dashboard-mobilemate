@@ -11,7 +11,7 @@ const UserAddForm = ({ users, submitForm, handleChange ,handleFormVisible }) => 
         <div onClick={handleFormVisible} className="form-X-btn">
           X
         </div>
-        <h1 className="text-xl text-white font-semibold text-center">
+        <h1 className="md:text-xl text-[1rem] text-white font-semibold text-center">
           Enter details
         </h1>
         <div>

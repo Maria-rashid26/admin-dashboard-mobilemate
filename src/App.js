@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import  { useState } from "react";
+import * as React  from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Mobile from "./Compnents/MainDashboard/Mobile";
-import News from "./Compnents/MainDashboard/News";
+import News from "./Compnents/MainDashboard/news/News";
 import Brands from "./Compnents/MainDashboard/Brands";
 import HitsGraph from "./Compnents/MainDashboard/HitsGraph";
 import MobileDetails from "./Compnents/MainDashboard/MobileDetails";
@@ -17,6 +18,8 @@ import Ads from "./Compnents/MainDashboard/Ads";
 import Users from "./Compnents/MainDashboard/Users/Users";
 import UserActivity from "./Compnents/MainDashboard/Users/UserActivity";
 import UserProvider from "./Compnents/MainDashboard/Users/UserProvider";
+import Reviews from "./Compnents/MainDashboard/reviews/Reviews";
+
 
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -28,7 +31,7 @@ function App() {
   return (
     <UserProvider>
       <BrowserRouter>
-        <div className="flex bg-gray-100 w-full h-screen  ">
+        <div className="flex bg-gray-100 w-full h-screen">
           {/* menu  sidebar  below md screen start*/}
           {sidebarOpen ? (
             <div className="fixed z-20 w-48 bg-white h-full md:block">
@@ -53,7 +56,7 @@ function App() {
             {/* navbar  ends */}
 
             {/* main dashbaord section starts */}
-            <div className=" text-[13px] md:text-[1rem] mb-7 flex-1 overflow-auto bg-gray-100  flex justify-between md:w-[100%] ">
+            <div className=" text-[13px] md:text-[1rem] flex-1 overflow-auto bg-gray-100  flex justify-between md:w-[100%] ">
               <div className="w-full  overflow-x-hidden">
                 <Routes>
                   <Route path="/" element={<MainDashboard />} />
@@ -70,6 +73,8 @@ function App() {
                   <Route path="/ads" element={<Ads />} />
                   <Route path="/users" element={<Users />} />
                   <Route path="/useractivity" element={<UserActivity />} />
+                  <Route path="/news" element={<News/>} />
+                  <Route path="/reviews" element={<Reviews/>} />
                 </Routes>
               </div>
               {/* main dashbaord section ends */}

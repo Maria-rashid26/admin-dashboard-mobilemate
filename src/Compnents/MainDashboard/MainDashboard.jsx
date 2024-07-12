@@ -1,27 +1,22 @@
 import React from "react";
-// import HitsGraph from "./HitsGraph";
-
+import { Link } from "react-router-dom";
+import DashboardCategories from "./DashboardCategories";
 
 const MainDashboard = () => {
   return (
-    <div className="">
- 
-      {/* <div className="overflow-x-auto grid grid-cols-2 gap-2 border">
- <div>maria</div>
-  <h1>Maria Rashid</h1>
-      </div> */}
-     
+    <div className="space-y-2">
+      <DashboardCategories />
+      <div className="grid grid-cols-2 py-2 gap-1 h-[24rem]  p-1">
+        <Link to={"/news"} className=" bg-white rounded-md shadow-md border p-2">
+          <div>News</div>
+        </Link>
+        <Link to={"/reviews"} className="bg-white rounded-md shadow-md border p-2">
+          <div>Reviews</div>
+        </Link>
 
-      {/* 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-        <HitsGraph/>
-          <h1>Maria Rashid</h1>
-        </div>
-        <div className="mx-auto   ">
-          <MobileDetails  />
-        </div>  */}
-        maria rashid
-        adfshkadnfcas Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae excepturi rerum architecto, minus atque, fuga officiis sunt magni molestias ullam voluptatibus mollitia porro consequuntur iure qui non cum impedit quo?
+        <div className="bg-white rounded-md shadow-md broder p-2">tital users </div>
+        <div className="bg-white rounded-md shadow-md border p-2">mobiles </div>
+      </div>
     </div>
   );
 };

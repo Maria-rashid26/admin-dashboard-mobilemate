@@ -48,7 +48,7 @@ const Users = () => {
   };
 
   return (
-    <div className=" text-xs mt-2 relative">
+    <div className=" text-xs mt-1 overflow-y-hidden relative">
       <div className="flex justify-between">
         <div>
           <h1 className="users-heading">User's</h1>
@@ -76,6 +76,7 @@ const Users = () => {
         todo={todo}
         handleEditButton={handleEditButton}
         handleDelete={handleDelete}
+
       />
 
       {/* USERS DETAILS ENDS */}
