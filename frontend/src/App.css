@@ -1,0 +1,11 @@
+/* General styles */
+body, html, #root, .app-container {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  gap: 3px;
+  background-color: gray;
+  color: gray;
+}
+
+

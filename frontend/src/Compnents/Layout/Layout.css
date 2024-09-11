@@ -1,0 +1,36 @@
+.layout::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  .layout::-webkit-scrollbar-track {
+    background: #e9e7e7
+  }
+
+  .layout::-webkit-scrollbar-thumb {
+    background-color: #9e9d9d;
+    border-radius: 10px;
+    border: 3px solid #d6d6d6;
+  }
+
+
+  @media (max-width: 768px) {
+    .dashboardSidebar {
+      position: fixed;
+      width: 16rem;
+      background-color: white;
+      height: 50vh; /* 50% of the viewport height */
+      overflow: hidden; /* Hide content that overflows the element */
+    }
+  }
+
+  @media (max-width: 768px) {
+    .menuSidebar {
+      position: fixed;
+      display: flex;
+      width: 12rem;
+      background-color: white;
+      height: 50vh; /* 50% of the viewport height */
+      bottom: 0; /* Position it at the bottom of the screen */
+    }
+  }
+  
